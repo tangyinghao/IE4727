@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jobValidation.js"></script>
+    <style>
+        header {
+            background-color: #ccaa66;
+            text-align: center;
+        }
+
+        #wrapper {
+            box-shadow: 5px 5px 5px #3c1919;
+            width: 80%;
+            min-width: 800px;
+            max-width: 1080px;
+            margin: auto;
+        }
+
+        #main {
+            display: flex;
+        }
+
+        #nav {
+            padding-top: 20px;
+            background-color: #e2d1b3;
+            width: 20%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        #right-column {
+            padding: 0px 20px;
+            background-color: #f5f5dd;
+            flex: 1;
+        }
+
+        #content {
+            color: #330000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        #details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            color: #4e2700;
+        }
+
+        #h2-block {
+            padding: 0 10px;
+            color: #4e2700;
+        }
+
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #ffffcc;
+            color: #330000;
+        }
+
+        footer {
+            text-align: center;
+            font-size: x-small;
+            font-style: italic;
+            padding: 20px 0;
+            background-color: #cca965;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 100%;
+        }
+        #nav li { width: 100%; }
+        #nav a {
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            color: #523a25;
+            font-weight: bold;
+        }
+        #nav a:hover {
+            text-decoration: underline;
+        }
+        #nav a.active {
+            color: #936743;
+        }
+
+        footer a {
+            color: #330000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><img src="javalogo.gif" width="800" height="117" alt="java jam logo"></h1>
+        </header>
+        <div id="main">
+            <div id="nav">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menu.php">Menu</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="jobs.html" class="active">Jobs</a></li>
+                        <li><a href="product-price-update.php">Product Price Update</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="right-column">
+                <div id="h2-block">
+                    <h2>Jobs at JavaJam</h2>
+                    <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>
+                </div>
+                <div id="content">
+                    <form method="post" action="show_post.php" novalidate>
+                        <table>
+                            <tr>
+                                <td><label for="name">*Name:</label></td>
+                                <td><input type="text" id="name" name="name" required placeholder="Enter your name here"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">*E-mail:</label></td>
+                                <td><input type="email" id="email" name="email" required placeholder="Enter your Email-ID here"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="startDate">Start Date:</label></td>
+                                <td><input type="date" id="startDate" name="startDate"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="experience">*Experience:</label></td>
+                                <td><textarea id="experience" name="experience" rows="4" cols="30" required placeholder="Enter your past experience here"></textarea></td>
+                            </tr>
+                        </table>
+                        <input type="reset" value="Clear">
+                        <br>
+                        <br>
+                        <input type="submit" value="Apply Now">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2014 JavaJam Coffee House<br>
+            <a href="mailto:yinghao@tang.com">yinghao@tang.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>

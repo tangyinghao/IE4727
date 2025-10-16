@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Time Sheet</title>
+<meta charset="utf-8">
+<style>
+table { width: 200px;
+        margin: auto;
+}
+table, th, td { border-style: none; }
+caption { font-size: 2em;
+          font-weight: bold;
+}
+thead { background-color: #eaeaea;
+}
+tbody { font-family: Arial, sans-serif;
+    font-size: .90rem;
+}
+tbody td { border-bottom: 1px #003 dashed;
+           padding-left: 25px;
+}
+tfoot { background-color: #eaeaea;
+        font-weight: bold;
+        text-align: center;
+        }
+</style>
+</head>
+<body>
+    <table border="1">
+        <caption>Time Sheet</caption>
+        <thead>
+            <tr>
+                <th id="day">Day</th>
+                <th id="hours">Hours Worked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="day">Monday</td>
+                <td id="hours">4</td>
+            </tr>
+            <tr>
+                <td id="day">Tuesday</td>
+                <td id="hours">3</td>
+            </tr>
+            <tr>
+                <td id="day">Wednesday</td>
+                <td id="hours">5</td>
+            </tr>
+            <tr>
+                <td id="day">Thursday</td>
+                <td id="hours">3</td>
+            </tr>
+            <tr>
+                <td id="day">Friday</td>
+                <td id="hours">3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>18</td>
+            </tr>
+        </tfoot>

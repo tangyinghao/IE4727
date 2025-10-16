@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            background-color: #ccaa66;
+            text-align: center;
+        }
+
+        #wrapper {
+            box-shadow: 5px 5px 5px #3c1919;
+            width: 80%;
+            min-width: 800px;
+            max-width: 1080px;
+            margin: auto;
+        }
+
+        #main {
+            display: flex;
+        }
+
+        #nav {
+            padding-top: 20px;
+            background-color: #e2d1b3;
+            width: 20%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        #right-column {
+            padding: 0px 20px;
+            background-color: #f5f5dd;
+            flex: 1;
+        }
+
+        #content {
+            color: #330000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        #winding-road {
+            margin: 10px;
+        }
+
+        #details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            color: #4e2700;
+        }
+
+        h3 {
+            color:#4e2700;
+            background-color: #e2d1b3;
+            margin: 10px 0;
+        }
+
+        #h2-block {
+            padding: 0 10px;
+            color: #4e2700;
+        }
+
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #ffffcc;
+            color: #330000;
+        }
+
+        footer {
+            text-align: center;
+            font-size: x-small;
+            font-style: italic;
+            padding: 20px 0;
+            background-color: #cca965;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 100%;
+        }
+        #nav li { width: 100%; }
+        #nav a {
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            color: #523a25;
+            font-weight: bold;
+        }
+        #nav a:hover {
+            text-decoration: underline;
+        }
+        #nav a.active {
+            color: #936743;
+        }
+
+        footer a {
+            color: #330000;
+        }
+
+        #music-content {
+            flex-direction: column;
+            padding: 0 50px;
+        }
+
+        #artist-content {
+            vertical-align: top;
+            margin: 0 40px;
+        }
+
+        .artist-image {
+            vertical-align: top;
+        }
+
+        .artist-image img {
+            width: 75px;
+            height: 75px;
+        }
+
+        .artist-text {
+            vertical-align: top;
+            padding: 0 30px;
+            margin: 0;
+        }
+
+        .artist-text p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><img src="javalogo.gif" width="800" height="117" alt="java jam logo"></h1>
+        </header>
+        <div id="main">
+            <div id="nav">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menu.php">Menu</a></li>
+                        <li><a href="music.html" class="active">Music</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="product-price-update.php">Product Price Update</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="right-column">
+                <div id="h2-block">
+                    <h2>Music at JavaJam</h2>
+                    <p>The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for some music you won't want to miss.</p>
+                </div>
+                <div id="content">
+                    <div id="music-content">
+                        <h3>JANUARY</h3>
+                        <div id="artist-content">
+                            <table>
+                                <tr>
+                                    <td class="artist-image">
+                                        <img src="mitski.jpg" alt="Mitski">
+                                    </td>
+                                    <td class="artist-text">
+                                        <p>Mitski is a Japanese-American indie rock singer-songwriter.</p>
+                                        <p><strong>CDs are available now!</strong></p>
+                                        <audio controls>
+                                            <source src="horse.mp4" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3>FEBRUARY</h3>
+                        <div id="artist-content">
+                            <table>
+                                <tr>
+                                    <td class="artist-image">
+                                        <img src="beatles.jpg" alt="The Beatles">
+                                    </td>
+                                    <td class="artist-text">
+                                        <p>The Beatles were an English rock band formed in Liverpool in 1960.</p>
+                                        <p><strong>CDs are available now!</strong></p>
+                                        <audio controls>
+                                            <source src="horse.mp4" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2014 JavaJam Coffee House<br>
+            <a href="mailto:yinghao@tang.com">yinghao@tang.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>
